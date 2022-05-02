@@ -1892,10 +1892,10 @@
     "@tryghost/root-utils" "^0.3.14"
     debug "^4.3.1"
 
-"@tryghost/domain-events@0.1.10", "@tryghost/domain-events@^0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@tryghost/domain-events/-/domain-events-0.1.10.tgz#1a657c7964b928ac63e7ada87902d6fa5d4f5a7a"
-  integrity sha512-C6xqg8VC5KgfgZ0X4zMUcoRBEDk7DS8xSepbIfZx61UZHbJRUMfbZ+AklGdnNQmQFxBc3eUCLAOByF6k1HXvTQ==
+"@tryghost/domain-events@0.1.11", "@tryghost/domain-events@^0.1.10":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@tryghost/domain-events/-/domain-events-0.1.11.tgz#947c27c2ed9ef7c7daaecf038a30d1bd61dd8ce4"
+  integrity sha512-MaJyZprT1+yqk71Q+nkuIMGjUZDFPRztgOiRkmlFMmaZpAReMoF8xXnUCJwcD9KSpUmt7Ca04+zQQNtQGplTtQ==
 
 "@tryghost/elasticsearch-bunyan@0.1.1":
   version "0.1.1"
