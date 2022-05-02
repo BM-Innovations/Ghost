@@ -2128,10 +2128,10 @@
     "@tryghost/tpl" "^0.1.4"
     bson-objectid "^2.0.1"
 
-"@tryghost/member-events@0.4.2", "@tryghost/member-events@^0.4.2":
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/@tryghost/member-events/-/member-events-0.4.2.tgz#d1266abad38aa0b8f9b9f3395b083971e85221bf"
-  integrity sha512-4VlGlB9uq3xxgeW3OXx9//Yb1kiRm7HbVVGiBJ9LMMjeoKZnpUQA9zHyY5FUK4Aolvz/wyxjb4Ci7JNjvoMrJg==
+"@tryghost/member-events@0.4.3", "@tryghost/member-events@^0.4.2":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@tryghost/member-events/-/member-events-0.4.3.tgz#e60c3387a1cecab84f5432a49895b2dbc4724d54"
+  integrity sha512-4opQfxsV1Blf0qMpCdpvskZ74Sdt7OnUykVNMG82x/R3tm9IH0TPj9c9SqSeJzg8NBTkIHTv+jeOmV8A75CxbQ==
 
 "@tryghost/members-analytics-ingress@^0.1.13":
   version "0.1.13"
