@@ -58,19 +58,31 @@ module.exports = createIrreversibleMigration(async (knex) => {
                 .where({post_id: id})
                 .select([
                     'og_image',
-                    'twitter_image'
+                    'twitter_image',
+                    'social_share_image_1',
+                    'social_share_image_2',
+                    'social_share_image_3',
+                    'social_share_image_4'
                 ]);
 
             if (postMeta) {
                 const og_image = urlUtils.toTransformReady(postMeta.og_image);
                 const twitter_image = urlUtils.toTransformReady(postMeta.twitter_image);
+                const social_share_image_1 = urlUtils.toTransformReady(postMeta.social_share_image_1);
+                const social_share_image_2 = urlUtils.toTransformReady(postMeta.social_share_image_2);
+                const social_share_image_3 = urlUtils.toTransformReady(postMeta.social_share_image_3);
+                const social_share_image_4 = urlUtils.toTransformReady(postMeta.social_share_image_4);
 
                 await knex('posts_meta')
                     .transacting(trx)
                     .where({post_id: id})
                     .update({
                         og_image,
-                        twitter_image
+                        twitter_image,
+                        social_share_image_1,
+                        social_share_image_2,
+                        social_share_image_3,
+                        social_share_image_4
                     });
             }
         }

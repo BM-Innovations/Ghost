@@ -108,7 +108,15 @@ module.exports = {
         frontmatter: {type: 'text', maxlength: 65535, nullable: true},
         feature_image_alt: {type: 'string', maxlength: 191, nullable: true, validations: {isLength: {max: 125}}},
         feature_image_caption: {type: 'text', maxlength: 65535, nullable: true},
-        email_only: {type: 'bool', nullable: false, defaultTo: false}
+        email_only: {type: 'bool', nullable: false, defaultTo: false},
+        share_on_facebook: {type: 'bool', nullable: false, defaultTo: false},
+        share_on_twitter: {type: 'bool', nullable: false, defaultTo: false},
+        share_on_linkedin: {type: 'bool', nullable: false, defaultTo: false},
+        share_on_instagram: {type: 'bool', nullable: false, defaultTo: false},
+        social_share_image_1: {type: 'string', maxlength: 2000, nullable: true},
+        social_share_image_2: {type: 'string', maxlength: 2000, nullable: true},
+        social_share_image_3: {type: 'string', maxlength: 2000, nullable: true},
+        social_share_image_4: {type: 'string', maxlength: 2000, nullable: true}
     },
     // NOTE: this is the staff table
     users: {

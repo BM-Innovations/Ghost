@@ -32,7 +32,11 @@ module.exports = [
                 'twitter_title',
                 'twitter_description',
                 'custom_template',
-                'locale'
+                'locale',
+                'social_share_image_1',
+                'social_share_image_2',
+                'social_share_image_3',
+                'social_share_image_4'
             ],
             withRelated: ['tags', 'authors'],
             withRelatedPrimary: {

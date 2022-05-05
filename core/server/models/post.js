@@ -128,7 +128,11 @@ Post = ghostBookshelf.Model.extend({
             'feature_image',
             'og_image',
             'twitter_image',
-            'canonical_url'
+            'canonical_url',
+            'social_share_image_1',
+            'social_share_image_2',
+            'social_share_image_3',
+            'social_share_image_4'
         ].forEach((attr) => {
             if (attrs[attr]) {
                 attrs[attr] = urlUtils.transformReadyToAbsolute(attrs[attr]);
@@ -169,7 +173,11 @@ Post = ghostBookshelf.Model.extend({
                 options: {
                     ignoreProtocol: false
                 }
-            }
+            },
+            social_share_image_1: 'toTransformReady',
+            social_share_image_2: 'toTransformReady',
+            social_share_image_3: 'toTransformReady',
+            social_share_image_4: 'toTransformReady'
         };
 
         Object.entries(urlTransformMap).forEach(([attrToTransform, transform]) => {

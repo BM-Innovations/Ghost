@@ -69,7 +69,7 @@ module.exports = async (model, frame, options = {}) => {
         // NOTE: the default of `email_only` is `false` which is why we default to `false` instead of `null`
         //       The undefined value is possible because `posts_meta` table is lazily created only one of the
         //       values is assigned.
-        const defaultValue = (attr === 'email_only') ? false : null;
+        const defaultValue = (attr in ['email_only', 'share_on_facebook', 'share_on_instagram', 'share_on_twitter', 'share_on_linkedin']) ? false : null;
         jsonModel[attr] = _.get(jsonModel.posts_meta, attr) || defaultValue;
     });
     delete jsonModel.posts_meta;
